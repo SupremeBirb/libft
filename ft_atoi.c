@@ -6,12 +6,11 @@
 /*   By: lelee <lelee@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/25 16:33:59 by lelee             #+#    #+#             */
-/*   Updated: 2019/08/09 11:52:31 by lelee            ###   ########.fr       */
+/*   Updated: 2019/08/29 17:29:41 by lelee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int	ft_atoi(const char *str)
 {

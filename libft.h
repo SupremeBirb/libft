@@ -6,7 +6,7 @@
 /*   By: lelee <lelee@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/24 08:42:55 by lelee             #+#    #+#             */
-/*   Updated: 2019/08/09 11:39:54 by lelee            ###   ########.fr       */
+/*   Updated: 2019/08/08 18:41:36 by lelee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,10 @@
 
 typedef struct	s_list
 {
-	void			*content;
-	size_t			content_size;
+	void					*content;
+	size_t				content_size;
 	struct s_list	*next;
-}				t_list;
+}								t_list;
 
 /*
 ** Functions **********************************************
@@ -39,7 +39,7 @@ typedef struct	s_list
 ** Strings
 */
 
-size_t			ft_strlen(const char *str);
+size_t		ft_strlen(const char *str);
 char			*ft_strdup(char *str);
 char			*ft_strcpy(char *dest, const char *src);
 char			*ft_strncpy(char *dest, const char *src, size_t n);
@@ -66,7 +66,9 @@ char			*ft_strsub(char const *s, unsigned int start, size_t len);
 char			*ft_strjoin(char const *s1, char const *s2);
 char			**ft_strsplit(char const *s, char c);
 char			*ft_strtrim(char const *s);
-size_t			ft_strlcat(char *dst, const char *src, size_t size);
+size_t		ft_strlcat(char *dst, const char *src, size_t size);
+char			**multi_dim(int size);
+char			*one_dim(int size);
 
 /*
 ** Supportive/Checkers
@@ -79,7 +81,7 @@ int				ft_isascii(int c);
 int				ft_isprint(int c);
 int				ft_isupper(int c);
 int				ft_islower(int c);
-size_t			ft_is_space(char c);
+size_t		ft_is_space(char c);
 int				ft_numwords(char const *s, char c);
 int				ft_count_letters(char const *s, char c);
 int				ft_num_digits(int len, int check);
@@ -123,11 +125,11 @@ void			ft_putnbr_fd(int n, int fd);
 ** Linked Lists
 */
 
-t_list			*ft_lstnew(void const *content, size_t content_size);
+t_list		*ft_lstnew(void const *content, size_t content_size);
 void			ft_lstdelone(t_list **alst, void (*del)(void*, size_t));
 void			ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstadd(t_list **alst, t_list *new);
 void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
-t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
 #endif
