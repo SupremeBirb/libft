@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_delete_list.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lelee <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: lelee <lelee@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/29 17:53:26 by lelee             #+#    #+#             */
-/*   Updated: 2019/08/29 17:53:29 by lelee            ###   ########.fr       */
+/*   Updated: 2019/09/02 04:16:56 by lelee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		deleteList(struct s_list **curr)
+void		deletelist(struct s_list **curr)
 {
 	struct s_list *node;
 	struct s_list *next;

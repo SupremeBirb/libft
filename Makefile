@@ -6,7 +6,7 @@
 #    By: lelee <lelee@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/07/24 08:42:35 by lelee             #+#    #+#              #
-#    Updated: 2019/08/07 16:43:47 by lelee            ###   ########.fr        #
+#    Updated: 2019/09/02 04:24:18 by lelee            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -80,8 +80,10 @@ SRC = ft_strlen.c \
 			ft_lstmap.c \
 			ft_memccpy.c \
 			ft_strncmp.c \
-			ft_iswhitespace.c
-			
+			ft_iswhitespace.c \
+			ft_delete_list.c \
+			ft_multi_string_array.c \
+			ft_numcharstrn.c
 
 OBJ = $(SRC:.c=.o)
 
