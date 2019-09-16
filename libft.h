@@ -69,6 +69,7 @@ char				*ft_strtrim(char const *s);
 size_t				ft_strlcat(char *dst, const char *src, size_t size);
 char				**multi_dim(int size);
 char				*one_dim(int size);
+int					get_next_line(const int fd, char **line);
 
 /*
 ** Supportive/Checkers

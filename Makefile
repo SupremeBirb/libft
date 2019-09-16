@@ -83,7 +83,9 @@ SRC = ft_strlen.c \
 			ft_iswhitespace.c \
 			ft_delete_list.c \
 			ft_multi_string_array.c \
-			ft_numcharstrn.c
+			ft_numcharstrn.c \
+			get_next_line.c \
+			
 
 OBJ = $(SRC:.c=.o)
 
