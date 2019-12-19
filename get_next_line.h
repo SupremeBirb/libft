@@ -15,7 +15,7 @@
 # define BUFF_SIZE 42
 # define FD_LIMIT 8192
 
-# include "libft/libft.h"
+# include "libft.h"
 # include <stdlib.h>
 # include <unistd.h>
 # include <fcntl.h>

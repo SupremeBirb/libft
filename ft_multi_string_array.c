@@ -15,9 +15,7 @@
 char		*one_dim(int size)
 {
 	char	*str;
-	int		i;
 
-	i = -1;
 	if (!(str = ft_strnew((size_t)size)))
 		return (NULL);
 	str[size--] = '\0';

@@ -1,7 +1,6 @@
 #include "get_next_line.h"
-#include <stdio.h>
 
-int			line_search(int fd, char **str, char **line, int ret)
+int			line_search(int fd, char **str, char **line)
 {
 	char *tmp;
 	int newline;
@@ -49,6 +48,6 @@ int			get_next_line(const int fd, char **line)
 		return (-1);
 	else if (ret == 0 && str[fd] == NULL)
 		return (0);
-	return (line_search(fd, str, line, ret));
+	return (line_search(fd, str, line));
 }
 	
