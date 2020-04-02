@@ -12,10 +12,11 @@
 
 #ifndef FT_GET_NEXT_LINE_H
 # define FT_GET_NEXT_LINE_H
-# define BUFF_SIZE 42
+# define BUFF_SIZE 32
 # define FD_LIMIT 8192
+# define GNL_MACRO 	char buf[BUFF_SIZE + 1]; int ret; char *tmp;
 
-# include "libft.h"
+# include "libft/libft.h"
 # include <stdlib.h>
 # include <unistd.h>
 # include <fcntl.h>
